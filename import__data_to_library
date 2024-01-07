@@ -1,0 +1,9 @@
+libname customer 'E:\AA1\Library';
+
+proc import 
+datafile="E:\AA1\customer_churn_combined.csv"*/
+out=customer.churn_dataset*/
+dbms=csv 
+replace;
+     getnames=yes;  /* assume first line contains variable names */
+run;
